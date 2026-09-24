@@ -1,0 +1,13 @@
+{
+  "threshold": 100,
+  "top": 2,
+  "sample_every": 2,
+  "threshold_invariant": true,
+  "queries": [
+    {"sql": "select * from t where id = 1", "millis": 150},
+    {"sql": "select * from t where id = 2", "millis": 50},
+    {"sql": "select * from t where id = 3", "millis": 220},
+    {"sql": "update t set v = 1 where id = 4", "millis": 130},
+    {"sql": "select * from t where id = 5", "millis": 90}
+  ]
+}
